@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* clearfix */
+.cf {
+	zoom: 1;
+}
+
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+body {
+	width: 100%;
+	color: #000000;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #FFFFFF;
+}
+
+/*==========================================
+ ヘッダーのスタイル
+===========================================*/
+header {
+	text-align: center;
+		position: static;
+	overflow: visible;
+}
+
+header h1 {
+	text-align: left;
+	padding: 15px 5px 7px 5px;
+	width: 280px;
+	float: left;
+}
+
+header h1 img {
+	width: 100%;
+}
+
+
+header ul#s_nav {
+	float: right;
+	margin-top: 20px;
+	position: static;
+}
+
+
+
+header ul#s_nav li {
+	float: left;
+	position: static;
+}
+
+header ul#s_nav li a {
+	display: block;
+	font-size: 0.8em;
+	margin-right: 20px;
+	padding-left: 20px;
+}
+
+header ul#s_nav li.contact a {
+	background: url(../img/icn_contact.jpg) no-repeat left center;
+}
+
+header ul#s_nav li.news a {
+	background: url(../img/icn_news.jpg) no-repeat left center;
+}
+
+header ul#s_nav li.sitemap a {
+	background: url(../img/icn_sitemap.jpg) no-repeat left center;
+}
+
+header p {
+	width: 100%;
+}
+
+header p img {
+	width: 100%;
+	height: auto;
+	max-width: 960px;
+}
+
+/*==========================================
+ グローバルナビゲーションのスタイル
+===========================================*/
+nav {
+	text-align: center;
+	border-bottom: 3px double #000;
+	margin: 10px auto 15px auto;
+}
+
+nav ul {
+	margin-bottom: 15px;
+}
+
+nav ul li {
+	text-align: center;
+	float: left;
+	width: 16%;
+	border-bottom: none;
+	border-right: 1px dotted #000;
+}
+
+nav ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav ul li:nth-child(odd) {
+	width: 17%;
+	border-bottom: none;
+}
+
+nav ul li.home {
+	border-left: none;
+	margin-left: 1px;
+}
+
+nav ul li.contact {
+	border-right: none;
+}
+
+nav ul li a {
+	display: block;
+}
+
+nav .service_child {
+	display: none;
+}
+
+/*==========================================
+ コンテンツエリア全体のスタイル
+===========================================*/
+div#contents {
+	background: url(../img/bg_footer.jpg) no-repeat bottom;
+	padding-bottom: 90px;
+}
+
+/*==========================================
+ コンテンツエリア -> WORKSのスタイル
+===========================================*/
+div#contents section#work h2 {
+	margin: 0 0 15px 5px;
+}
+
+div#contents section#work article {
+	text-align: center;
+	width: 100%;/*50%;*/
+	min-width: 120px;
+	/*float: left;*/
+	margin-bottom: 30px;
+}
+
+div#contents section#work article img {
+	width: 100%;
+	height: auto;/*max-width: 184px;*/
+}
+
+div#contents section#work article h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+div#contents section#work article p {
+	text-align: left;
+	font-size: 1em;
+	line-height: 2.0em;
+	padding: 0 15px;
+}
+
+/*==========================================
+ コンテンツエリア -> NEWSのスタイル
+===========================================*/
+div#contents section#news {
+	margin-left: 5px;
+}
+
+div#contents section#news h2 {
+	margin: 0 5px 15px 0;
+	background: url(../img/bg_headerLine.jpg) repeat-x bottom;
+	padding-bottom: 10px;
+}
+
+div#contents section#news article h3 {
+	font-size: 1em;
+	background: url(../img/icn_arrow.jpg) no-repeat center left;
+	margin-bottom: 10px;
+	padding-left: 7px;
+}
+
+div#contents section#news article p {
+	line-height: 1.4em;
+	font-size: 1em;
+	margin: 0 10px 20px 10px;
+}
+
+div#contents section#news article p a {
+	text-decoration: underline;
+}
+
+div#contents section#news article p a:hover {
+	text-decoration: none;
+}
+
+/*==========================================
+ コンテンツエリア -> INFORMATIONのスタイル
+===========================================*/
+div#contents section#information {
+	text-align: center;
+	margin-left: 5px;
+}
+
+div#contents section#information h2 {
+	text-align: left;
+	margin: 0 5px 15px 0;
+	background: url(../img/bg_headerLine.jpg) repeat-x bottom;
+	padding-bottom: 10px;
+}
+
+div#contents section#information ul li {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+div#contents section#information ul li img {
+	width: 98%;
+	height: auto;
+	max-width: 470px;
+}
+
+/*==========================================
+ ページトップへボタンのスタイル
+===========================================*/
+a#pagetopBtn img {
+	position: fixed;
+	bottom: 10px;
+	right: 1px;
+}
+
+/*==========================================
+ フッターのスタイル
+===========================================*/
+footer {
+	border-top: 10px solid #000;
+}
+
+footer div {
+	margin: 20px 0 0 20px;
+}
+
+footer div p {
+	font-size: 0.7em;
+	line-height: 2.0em;
+}
+
+footer div small {
+	font-size: 0.6em;
+}
+
+
+#top-slider {
+	clear: both;
+}

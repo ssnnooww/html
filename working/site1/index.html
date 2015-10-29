@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RWD 20150106</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<!-- reset.cssを先に読み込む -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/owlcarousel/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="css/owlcarousel/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="css/meanmenu.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- http://owlgraphic.com/owlcarousel/ -->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+ 
+  $("#top-slider").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+ 
+ 	  autoPlay : true,
+	  pagination:false
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
+</script>
+
+<!-- http://www.meanthemes.com/plugins/meanmenu/ -->
+<script type="text/javascript" src="js/jquery.meanmenu.js"></script>
+<script>
+	jQuery(document).ready(function () {
+	    jQuery('nav').meanmenu();
+	});
+</script>
+</head>
+<body>
+<div id="wrapper"> 
+	<!-- ヘッダー -->
+	<header id="header">
+		<h1 id="top"><img src="img/img_logo.jpg" alt="Responsive,Inc."></h1>
+		<ul id="s_nav" class="cf">
+			<li class="contact"><a href="#">contact</a></li>
+			<li class="news"><a href="#">news</a></li>
+			<li class="sitemap"><a href="#">sitemap</a></li>
+		</ul>
+	</header>
+	<div id="top-slider" class="owl-carousel owl-theme">
+		<div class="item"><img src="img/slide1.jpg" alt="Ferrari"></div>
+		<div class="item"><img src="img/slide2.jpg" alt="Ferrari"></div>
+		<div class="item"><img src="img/slide3.jpg" alt="Ferrari"></div>
+	</div>
+	
+	<!-- グローバルナビゲーション -->
+	<div id="meanmenu"></div>
+	<nav id="nav">
+		<ul class="cf">
+			<li class="home"><a href="#">HOME</a></li>
+			<li><a href="#">SERVICE</a>
+			
+			<ul class="service_child">
+				<li><a href="#">Second Level Link</a>
+					<ul>
+						<li><a href="#">Third Level Link</a></li>
+						<li><a href="#">Third Level Link</a></li>
+						<li><a href="#">Third Level Link</a>
+							<ul>
+								<li><a href="#">Fourth Level Link</a></li>
+								<li><a href="#">Fourth Level Link</a></li>
+								<li><a href="#">Fourth Level Link with extra long name so it wraps</a>
+									<ul>
+										<li><a href="#">Fifth Level Link</a></li>
+										<li><a href="#">Fifth Level Link</a></li>
+										<li><a href="#">Fifth Level Link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Second Level Link</a></li>
+				<li><a href="#">Second Level Link</a></li>
+			</ul>
+			
+			</li>
+			<li><a href="#">WORK</a></li>
+			<li><a href="#">COMPANY</a></li>
+			<li><a href="#">RECRUIT</a></li>
+			<li class="contact"><a href="#">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<!-- コンテンツエリア -->
+	<div id="contents" class="cf">
+		<section id="work" class="cf">
+			<h2><img src="img/h2_works.jpg" width="63" height="15" alt="works"></h2>
+			<article> <img src="img/work1.jpg" width="184" height="160" alt="work1">
+				<h3>Works1</h3>
+				<p>Responcive,Inc.のWorks1です。最新の実績5件を紹介しています。私たちのモットーは「お客様が第一です。」何卒宜しくお願い致します。</p>
+			</article>
+			<article> <img src="img/work2.jpg" width="184" height="160" alt="work2">
+				<h3>Works2</h3>
+				<p>Responcive,Inc.のWorks2です。最新の実績5件を紹介しています。私たちのモットーは「お客様が第一です。」何卒宜しくお願い致します。</p>
+			</article>
+			<article> <img src="img/img_works3.jpg" width="184" height="160" alt="work1">
+				<h3>Works3</h3>
+				<p>Responcive,Inc.のWorks3です。最新の実績5件を紹介しています。私たちのモットーは「お客様が第一です。」何卒宜しくお願い致します。</p>
+			</article>
+			<article> <img src="img/img_works4.jpg" width="184" height="160" alt="work1">
+				<h3>Works4</h3>
+				<p>Responcive,Inc.のWorks4です。最新の実績5件を紹介しています。私たちのモットーは「お客様が第一です。」何卒宜しくお願い致します。</p>
+			</article>
+			<article> <img src="img/img_works5.jpg" width="184" height="160" alt="work1">
+				<h3>Works5</h3>
+				<p>Responcive,Inc.のWorks5です。最新の実績5件を紹介しています。私たちのモットーは「お客様が第一です。」何卒宜しくお願い致します。</p>
+			</article>
+		</section>
+		<section id="news">
+			<h2>NEWS</h2>
+			<article>
+				<h3>2013.01.03</h3>
+				<p><a href="#">レスポンシブウェブデザインでサイト制作を始めました。仮当て可変テキスト。仮当て可変テキスト。仮当て可変テキスト。</a></p>
+			</article>
+			<article>
+				<h3>2013.01.02</h3>
+				<p><a href="#">レスポンシブウェブデザインでサイト制作を始めました。仮当て可変テキスト。仮当て可変テキスト。仮当て可変テキスト。</a></p>
+			</article>
+			<article>
+				<h3>2013.01.01</h3>
+				<p><a href="#">あけましておめでとうございます。本年もよろしくレスポンシブサイトお願い致します。</a></p>
+			</article>
+		</section>
+		<section id="information">
+			<h2>INFORMATION</h2>
+			<ul>
+				<li><a href="#"><img src="img/bnr_recuruit.jpg" alt="recruit"></a></li>
+				<li><a href="#"><img src="img/bnr_service.jpg" alt="our services"></a></li>
+			</ul>
+		</section>
+	</div>
+	
+	<!-- ページトップへボタン --> 
+	<a id="pagetopBtn" href="#top"><img src="img/icn_pagetop.jpg" width="40" height="60" alt="pagetop"></a> 
+	
+	<!-- フッター -->
+	<footer id="footer">
+		<div> <img src="img/img_logo_s.jpg" width="164" height="18" alt="Responsive,Inc">
+			<p>レスポンシブ株式会社<br>
+				本社:〒XXX-XXXX<br>
+				東京都中央区日本橋 レスポンシブビル１階</p>
+			<small>Copyright &copy; 2013 Responsive corporation. All Rights Reserved.</small> </div>
+	</footer>
+</div>
+</body>
+</html>
